@@ -102,4 +102,48 @@ def learn(desired_knowledge):
     	quick copying tool 
 
 
+<<< B A S H >>> 
+
+    1. What is a difference between running ./script.sh and . ./script.sh?  
+
+    2. Write a a simple bash script with conditional.      
+        directory="/home"
+          if [ -d $directory ]; then
+          	echo "Good, you do have home!"
+          else 
+          	echo "Are you homeless?"
+          fi 
+
+    3. Write a simple bash script with argument parsing.
+      echo "Your name is $1 and you are $2 years old!"
+      
+      $0 - is reserved for file script name      
+
+    4. Write oneline command. 
+      git commit && git push
+      ps aux | grep mysql > mysql_p
+
+    5. Check following bash code:
+      if [[ -z "$string" ]; then
+        echo "String is empty"
+      elif [[ -n "$string" ]]; then
+        echo "String is not empty"
+      
+     (Missing square bracket and fi) 
+
+    6. FizzBuzz in bash:
+      word[3]=Fizz
+      word[5]=Buzz
+
+      for i in {1..100}; do
+      	out=""
+        	for index in "${!word[@]}"; do
+        		if (($i % $index == 0 )); then out+="$i${word[$index]}"; fi
+          done  
+
+          if [ -z $out ]; then out=$i; fi
+          printf "%s\n" $out
+      done
+
+
 

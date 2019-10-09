@@ -1,0 +1,105 @@
+     _             ___          _              _    _ 
+    (_)   ___    / __/ ____    / /_   ____    / /  (_)  ____
+   / /  / __ \  / /_  / __ \  / __ \ / __ \  / /  / /  / ___/
+  / /  / / / / / __/ / /_/ / / / / // /_/ / / /  / /  / /__
+ /_/  /_/ /_/ /_/    \____/ /_/ /_/ \____/ /_/  /_/   \___/
+
+
+def learn(desired_knowledge):
+      while access_time(desired_knowledge) > instant_access:
+          iterate(desired_knowledge)
+
+==============================================================
+
+                DevOps typical questions
+        Translated, edited from https://devopsiarz.pl/ 
+                Also, new questions added. 
+        
+
+<<<	L I N U X	>>>
+
+    0. How to check last reboot/shutdown or uptime?
+      who -b 
+      last reboot   
+      last shutdown
+
+      uptime -s 
+
+      uptime
+
+    1. How to check IP address of particular instance (host)?		
+    	hostname -i | iwconfig | ip addr 		
+
+    2. How to check default routing for particular instance (host)?	
+  	  ip route //look for default route
+
+    3. What is a process? What is difference between process, program and source code? 
+      ... 
+
+    4. What are process states?	
+    	running, stopped, waiting, ready 
+
+    5. How to check process ID in a system?		
+    	ps -e | grep <process> 
+
+    6. Basic file operations in system: 		
+    	touch, mv, cp, rm
+
+    7. What does kill command do?	
+    	Sends a signal to the process. 
+	  	e.g. kill -9 <pid> 
+    	
+    8. What is an inode?		
+    	It is an pointer structure of a file, contains informaiton about owner, size, links, modified time, etc.
+
+    9. What is load average and what particular number of output mean? 
+      Load per last: minute, 5 min, 15 minutes.
+		
+    10. Do load average=4 is big or not? 
+    	You're fucked dude.
+
+    11. Default port for SSH? 
+    	22
+
+    12. How to check, what process listents on a given port? 
+    	lsof -i :<port> 
+
+    13. How to run a command in background?
+    	<command> & 
+
+    14. How to check active network connections? 
+    	lsof -i 
+
+    15. What does umask command?
+    	gets or sets file creation mode mask
+
+    16. You can read as user two files in /etc/ - passwd and shadow? Whad does
+        it mean?
+
+ 	      :) :) :) 
+      	/etc/passwd - information about users (id, gid, home dir, shell, etc.) 
+      	/etc/shadow - crypted passwords 
+
+    17. How to block connections from particular IP, on particular port? 
+      	by iptables rule
+        iptables -A INPUT -s <ip> -j DROP
+
+    18. Explain difference between buffor and cache?
+      
+      Both are a temporary storages, but buffer is mainly found in a RAM
+      memory and acts a place where CPU can store data temporarily (used
+      in I/O operations). Cache on the other hand acts as high-speed 
+      storage - can be part of RAM or disk space. 
+
+    19. What is chroot?
+    	*nix command that runs a program with changed root directory
+
+    20. Explain output from free command, what printed values mean? 
+    	Memory allocation in your system. 
+    	Total/Used/Free/Shared/Buff|Cached/Available
+
+    21. What is a rsync tool, and what it does?
+    	quick copying tool 
+
+
+

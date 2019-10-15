@@ -35,20 +35,20 @@ def learn(desired_knowledge):
 
     3. What is a process? What is difference between process, program and source code? 
       Source code - human readable programming language, a list of
-instructions that human can understand and write well. Later, this code will
-be compiled into a program.  
+      instructions that human can understand and write well. Later, this 
+      code will be compiled into a program.  
           |
           |   C O M P I L A T I O N 
           v
       Program - it is a compiled source code, that computer can understand
-and execute quickly. It is hard to read for humans, but not impossible (reverse
-enginneering). 
+      and execute quickly. It is hard to read for humans, but not impossible 
+      (reverse enginneering). 
           |
           |   E X E C U T I O N 
           v
       Process - It is a compiled program in a "motion". Primary abstraction of
-operating systems. Contains program and its activity (PID, memory, files,
-registers, kernel state)
+      operating systems. Contains program and its activity (PID, memory, files,
+      registers, kernel state)
 
     4. What are process states?	
     	running, stopped, waiting, ready 
@@ -158,6 +158,48 @@ registers, kernel state)
           if [ -z $out ]; then out=$i; fi
           printf "%s\n" $out
       done
+
+
+<<< P Y T H O N >>> 
+
+    1. What type of language is Python? 
+      It is a intepretated language - main implementation is CPython,
+      multiparadigm. 
+
+    2. You are given a list of numbers. Multiply numbers that are divisible by 2.
+     	input_list = list(range(100)) 
+     	answer = [i*10 for i in input_list if i %  2 == 0]
+
+    3. Given a list of number retrieve first X elements, reverse or sort the
+list.
+	     solution = L[:10]
+       solutuion.reverse()
+
+    4. How to install depencies for particular Python project? 
+      pip install -r requirements.txt
+
+    5. What is a virtualenv? 
+      It is a tool created to isolate Python environments. You can easily
+      switch, create, delete Python environments at need.    	
+
+    5. Write FizzBuzz in Python
+      for i in range(1, 101):
+        if i % 15 is 0:
+          print("FizzBuzz")
+        elif i % 3 is 0:
+          print("Fizz")
+        elif i % 5 is 0:
+          print("Buzz")
+        else:
+          print(i)
+      
+    6. LEGB Rule in Python. 
+      It is a rule to describe way of searching namespaces in Python:
+        1) (L) ocal    - inside function or class, 
+        2) (E) nclosed - inside enclosing functions (nested function),
+        3) (G) lobal   - at uppermost level, 
+        4) (B) uilt-in - namespace with builtin modules. 
+
 
 
 

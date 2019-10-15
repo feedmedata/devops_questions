@@ -34,7 +34,21 @@ def learn(desired_knowledge):
   	  ip route //look for default route
 
     3. What is a process? What is difference between process, program and source code? 
-      ... 
+      Source code - human readable programming language, a list of
+instructions that human can understand and write well. Later, this code will
+be compiled into a program.  
+          |
+          |   C O M P I L A T I O N 
+          v
+      Program - it is a compiled source code, that computer can understand
+and execute quickly. It is hard to read for humans, but not impossible (reverse
+enginneering). 
+          |
+          |   E X E C U T I O N 
+          v
+      Process - It is a compiled program in a "motion". Primary abstraction of
+operating systems. Contains program and its activity (PID, memory, files,
+registers, kernel state)
 
     4. What are process states?	
     	running, stopped, waiting, ready 

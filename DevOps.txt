@@ -201,5 +201,31 @@ list.
         4) (B) uilt-in - namespace with builtin modules. 
 
 
+<<< C L O U D >>> 
+
+    0. What are cloud services? 
+      They refere to any IT services that are accessed and provisioned
+      from cloud provider (basically you access someone else hardware via
+      internet at your needs). 
+
+    1. List known to you cloud services providers.
+      Google Cloud Platform, Azure, Amazon Web Services.
+
+    2. List basic cloud services. 
+      SaaS - software as service (off-premises), 
+      PaaS - platform as service, 
+      IaaS - infrastructure as service, 
+      Private/Public/Hybrid cloud, 
+      Gaming (Google Stradia).
+
+    3. What is "on-premise" and how does it relates to cloud? 
+      On-prem is a local IT environment in a close proximity of a person or
+      business that is using it (due to that fact it is often regarded as more
+      secure). Opposie to SaaS - the solution is hosted in-house. 
+
+    4. What is more cost efficient: cloud or own infrastructure? 
+      It depends on length and scale of the project. In small, medium
+      projects, it is more cost efficient to use cloude services (VPS,
+      dedicated servers). 
 
 
